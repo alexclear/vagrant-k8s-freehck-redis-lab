@@ -11,7 +11,10 @@
   vars:
     - k8s_namespace: "redis"
     - spotahome_redis_operator_helm_release: "redis"
+    - amaizfinance_redis_cr_name: "redis"
+    - amaizfinance_redis_cr_password: "dahzoh6Shoo7wuu0ucee"
   roles:
     - role: k8s-namespace
     - role: k8s-rancher-local-path-provisioner
     - role: k8s-amaizfinance-redis-operator
+    - role: k8s-amaizfinance-redis-cr

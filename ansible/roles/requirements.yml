@@ -40,3 +40,6 @@
 - src: https://github.com/kofonfor/ansible-role-k8s-amaizfinance-redis-operator.git
   version: bcaeea85c2c48277c9f32137ca8b1f5337880f3a
   name: k8s-amaizfinance-redis-operator
+- src: https://github.com/kofonfor/ansible-role-k8s-amaizfinance-redis-cr.git
+  version: 7e85b7624b4e7b1bcd359246356bce9bec4bd06e
+  name: k8s-amaizfinance-redis-cr
