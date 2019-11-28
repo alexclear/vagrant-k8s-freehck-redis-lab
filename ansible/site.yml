@@ -1,0 +1,17 @@
+- hosts: k8s_cluster
+  become: true
+  any_errors_fatal: true
+  roles:
+    - role: freehck.k8s
+      tags:
+        - k8s
+
+- hosts: kube1
+  become: true
+  vars:
+    - k8s_namespace: "redis"
+    - spotahome_redis_operator_helm_release: "redis"
+  roles:
+    - role: k8s-namespace
+    - role: k8s-rancher-local-path-provisioner
+    - role: k8s-amaizfinance-redis-operator
